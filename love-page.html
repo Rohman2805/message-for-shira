@@ -20,12 +20,25 @@
       min-height: 100vh;
       margin: 0;
       padding: 1rem;
+      overflow-x: hidden;
+    }
+
+    .video-love {
+      width: 90%;
+      max-width: 600px;
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      object-fit: cover;
+      animation: fadeIn 2s ease-out forwards;
+      opacity: 0;
     }
 
     main {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       flex-grow: 1;
       width: 100%;
     }
@@ -38,7 +51,7 @@
       max-width: 600px;
       width: 90%;
       text-align: center;
-      animation: fadeIn 1.5s ease-out forwards;
+      animation: fadeIn 1.5s ease-out 1s forwards;
       opacity: 0;
     }
 
@@ -111,19 +124,27 @@
 </head>
 <body>
 
+
   <main>
+    <!-- Video aesthetic -->
+    <video class="video-love" autoplay loop muted playsinline>
+      <source src="snaptik_7491741088735104264.mp4" type="video/mp4">
+      Maaf, browser kamu tidak mendukung video ini.
+    </video>
+
+    <!-- Kartu Pesan Cinta -->
     <section class="card">
       <h1>🤍 Dari Rohman untuk Shira 🌸</h1>
       <p>
-        Denger cerita kamu semalem, aku jadi tau... hati dan pikiran kamu lagi nggak baik-baik aja. Dan itu gak apa-apa.  
+        Denger cerita kamu semalem, aku jadi tau... hati dan pikiran kamu lagi nggak baik-baik aja. Dan itu gak apa-apa.  
         Kadang dunia ini terlalu berat buat dijalanin sendiri, dan kamu nggak harus selalu kuat.
       </p>
       <p>
-        Tapi tolong inget ini yaa 💖 — kamu itu luar biasa.  
+        Tapi tolong inget ini yaa 💖 — kamu itu luar biasa.  
         Kamu berharga, kamu layak dicintai dengan tulus, dan kamu pantas bahagia tanpa harus ngejar semuanya sendirian.
       </p>
       <p>
-        Kalau kamu capek, kamu boleh istirahat.  
+        Kalau kamu capek, kamu boleh istirahat.  
         Kalau kamu mau cerita, ngadu, nangis, ketawa, atau cuma diem bareng... aku di sini 🤗💌
       </p>
       <p>
